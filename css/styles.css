@@ -205,6 +205,10 @@ h3 { font-size: 1.28rem; }
 .footer-links { display: flex; gap: 1.4rem; flex-wrap: wrap; }
 .footer-links a { font-weight: 700; color: var(--ink-soft); transition: color .15s; }
 .footer-links a:hover { color: var(--coral); }
+.footer-qr { display: flex; flex-direction: column; align-items: center; gap: .5rem; text-align: center; }
+.footer-qr img { width: 104px; height: 104px; background: #fff; padding: 8px; border-radius: 14px; box-shadow: var(--shadow-sm); border: 1px solid var(--line); transition: transform .2s ease; }
+.footer-qr:hover img { transform: translateY(-3px); }
+.footer-qr span { font-size: .8rem; font-weight: 700; color: var(--ink-soft); }
 .footer-bottom { margin-top: 1.8rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--ink-soft); text-align: center; }
 
 /* ---------- Reveal animation ---------- */
