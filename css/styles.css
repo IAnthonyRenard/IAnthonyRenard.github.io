@@ -163,9 +163,6 @@ h3 { font-size: 1.28rem; }
 .project-tag { align-self: flex-start; font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--teal-dark); background: rgba(42,157,143,.12); padding: .28rem .7rem; border-radius: 100px; margin-bottom: .7rem; }
 .project h3 { font-size: 1.18rem; margin-bottom: .45rem; }
 .project p { color: var(--ink-soft); font-size: .96rem; }
-.project-more { display: none; }
-.cards-grid.expanded .project-more { display: flex; }
-.realisations-more { text-align: center; margin-top: 2.2rem; }
 
 /* ---------- About ---------- */
 .about-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 3.5rem); align-items: start; }

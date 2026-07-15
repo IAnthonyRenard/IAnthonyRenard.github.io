@@ -73,16 +73,6 @@
     });
   }
 
-  /* ---------- Afficher plus de projets ---------- */
-  var moreBtn = document.getElementById("moreProjects");
-  var grid = document.getElementById("projectsGrid");
-  if (moreBtn && grid) {
-    moreBtn.addEventListener("click", function () {
-      grid.classList.add("expanded");
-      moreBtn.style.display = "none";
-    });
-  }
-
   /* ---------- Animations au défilement ---------- */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
