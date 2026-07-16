@@ -201,6 +201,9 @@ h3 { font-size: 1.28rem; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: .9rem; }
 .footer-brand p { color: var(--ink-soft); font-size: .88rem; }
+.footer-phones { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: .35rem; }
+.footer-phones a { font-weight: 700; font-size: .88rem; color: var(--ink-soft); transition: color .15s; }
+.footer-phones a:hover { color: var(--coral); }
 .footer-links { display: flex; gap: 1.4rem; flex-wrap: wrap; }
 .footer-links a { font-weight: 700; color: var(--ink-soft); transition: color .15s; }
 .footer-links a:hover { color: var(--coral); }
