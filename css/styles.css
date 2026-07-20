@@ -151,6 +151,24 @@ h3 { font-size: 1.28rem; }
 .step h3 { font-size: 1.12rem; margin-bottom: .45rem; }
 .step p { color: var(--ink-soft); font-size: .96rem; }
 
+/* ---------- Savoir-faire (pipeline + automation) ---------- */
+.pipeline { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: .7rem; margin-bottom: 1rem; counter-reset: pipe; }
+.pipe-step { position: relative; display: flex; flex-direction: column; align-items: center; gap: .45rem; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 1.2rem .9rem .9rem; flex: 1 1 120px; min-width: 118px; max-width: 155px; box-shadow: var(--shadow-sm); counter-increment: pipe; transition: transform .2s ease, box-shadow .2s ease; }
+.pipe-step:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.pipe-step::before { content: counter(pipe); position: absolute; top: -11px; left: -11px; width: 27px; height: 27px; display: grid; place-items: center; border-radius: 50%; background: linear-gradient(135deg, var(--amber), var(--coral)); color: #fff; font-family: var(--font-body); font-weight: 800; font-size: .8rem; box-shadow: var(--shadow-sm); }
+.pipe-ico { font-size: 1.8rem; line-height: 1; }
+.pipe-txt { font-weight: 700; font-size: .86rem; text-align: center; color: var(--ink); }
+.pipeline-note { text-align: center; color: var(--ink-soft); font-size: .9rem; font-style: italic; margin-bottom: 0; }
+
+.automation { margin: 2.6rem auto 0; max-width: 840px; background: linear-gradient(135deg, #FFF3E6, #FDECDD); border: 1px solid #F3D9BE; border-radius: var(--radius-lg); padding: 2rem; }
+.automation-head { display: flex; align-items: center; gap: 1.1rem; margin-bottom: 1.3rem; }
+.automation-ico { font-size: 2.6rem; line-height: 1; flex-shrink: 0; }
+.automation-head h3 { font-size: 1.35rem; margin-bottom: .2rem; }
+.automation-head p { color: var(--ink-soft); }
+.automation-list { list-style: none; display: flex; flex-wrap: wrap; gap: .8rem; }
+.automation-list li { flex: 1 1 300px; background: #fff; border-radius: 14px; padding: .9rem 1.1rem .9rem 2.7rem; font-weight: 700; box-shadow: var(--shadow-sm); position: relative; }
+.automation-list li::before { content: "\2713"; position: absolute; left: 1rem; top: .9rem; color: var(--teal); font-weight: 900; }
+
 /* ---------- Projects ---------- */
 .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
 .project {
